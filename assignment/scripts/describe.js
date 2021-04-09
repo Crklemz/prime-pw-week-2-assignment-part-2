@@ -133,10 +133,17 @@ if (number >= 2) {
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+// FIX - variables colorOne and colorTwo are set to the wrong values. They were flip flopped.
+// Should be let colorOne = 'blue' and let colorTwo = 'red'
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - block of code to run is missing colorTwo.
+// should be if (mix === true) {
+//  colorOne = 'purple';
+//  colorTwo = 'purple';
+//}
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -148,8 +155,10 @@ if (mix === true) {
 
 /*
 let temp = 40;
+//FIX - time is supposed to be a variable but it was made a constant. change cont to let.
 const time = 4;
 
+FIX - the compound conditional shows OR instead of AND. Change to - if (temp > 39 && time >= 4)
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -161,11 +170,12 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
+//FIX - minAge is supposed to be a variable but it was set as a constant. Change to - let minAge = 21
 const minAge = 21;
 
-if(minAge <= age) {
+if(minAge <= age) {         //FIX - Not sure if it matters but per the instructions, it should be if (age >= minAge) versus (minAge <= age)
   console.log('no entry');
-} else {
+} else {                    //FIX - The else should be down a line to keep the code neat. 
   console.log('enter');
 }
 */
