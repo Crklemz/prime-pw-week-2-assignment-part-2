@@ -71,11 +71,11 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-//We create 3 variables 'isStudent', 'age', and 'zip' and assign them the values 'true', '34', and '55407' respectively
-//We create a compound conditional 'if, else if, else' statement checking if 'isStudent' is true AND if 'zip' is greater than 80000. If so, we will console log 'You're a student on the West Coast!'
+//We create 3 variables 'isStudent' (boolean), 'age' (number), and 'zip' (number) and assign them the values 'true', '34', and '55407' respectively
+//We create a compound conditional 'if, else if, else if, else' statement checking if 'isStudent' is true AND if 'zip' is greater than 80000. If so, we will console log 'You're a student on the West Coast!'
 //otherwise we will check if 'isStudent' is false OR 'age' is less than 30. If either of those are true, then we will console log 'What are your hobbies?'
 //otherwise we will check if 'isStudent' equals true, if so, we will console log 'Welcome to Prime!'
-//otherwise we will console log 'How about the weather?'
+//otherwise, if all are false, we will console log 'How about the weather?'
 //We will ultimately console log 'Welcome to Prime!'
 
 //CODE
@@ -170,12 +170,11 @@ if (temp > 39 || time >= 4) {
 
 /*
 let age = 21;
-//FIX - minAge is supposed to be a variable but it was set as a constant. Change to - let minAge = 21
 const minAge = 21;
 
-if(minAge <= age) {         //FIX - Not sure if it matters but per the instructions, it should be if (age >= minAge) versus (minAge <= age)
+if(minAge <= age) {   // FIX - the console logs are switched. as it is written, 'no entry' will show in the console
   console.log('no entry');
-} else {                    //FIX - The else should be down a line to keep the code neat. 
+} else {
   console.log('enter');
 }
 */
